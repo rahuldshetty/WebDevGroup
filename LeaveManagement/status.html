@@ -12,8 +12,9 @@
 
     <ul class="nav">
        
-        <li class="thisPage" ><div class="navItem" id="navItem1" style="color:black;">Request Leave</div></li>
-        <li><div class="navItem" id="navItem2">Status</div></li>
+        
+        <li><div class="navItem" id="navItem1">Request Leave</div></li>
+        <li class="thisPage"  ><div class="navItem" id="navItem2" style="color:black;">Status</div></li>
 
          <li style="float: right;"><div class="logBtn" id="logoutBtn">Logout</div></li>
     </ul>
@@ -30,39 +31,35 @@
         <form>
             <table >
 
-            <tr align="center">          
-                <td class="element">  Name </td>
-                <td><input type="text" class="formElement" disabled="disabled" id="userName" ></td>
-            </tr>
-            
-            <tr  align="center">
-                <td class="element">Department</td>
-                <td><input type="text" class="formElement" disabled="disabled" id="dept" ></td>
+            <tr align="center">
+                <td class="element">Leave Status</td>
+                <td><input type="date" class="formElement" id="leaveDate" disabled="disabled" placeholder="Awaiting for Confirmation"></td>
             </tr>
 
-             <tr align="center">          
-                <td class="element">  LeaveReason </td>
+            <tr align="center">          
+                <td class="element">  Leave Reason </td>
                 <td>
-                    <textarea class="formElement" placeholder="Enter Reason." rows="1" cols="50"> 
+                    <textarea class="formElement" placeholder="Enter Reason." rows="1" cols="50" disabled="disabled"> 
                         
                     </textarea>
                 </td>
             </tr>
 
+
             <tr align="center">
                 <td class="element">Leave Date</td>
-                <td><input type="date" class="formElement" id="leaveDate" ></td>
+                <td><input type="date" class="formElement" id="leaveDate" disabled="disabled"></td>
             </tr>
 
             <tr align="center">
                 <td class="element">Number of Days</td>
-                <td><input type="number" class="formElement" id="noOfDays" value="1" min="1" ></td>
+                <td><input type="number" class="formElement" id="noOfDays" value="1" min="1" disabled="disabled"></td>
             </tr>
 
             <tr align="center">
-                    <td class="element">Leave Type</td>
+                    <td class="element" >Leave Type</td>
                     <td>
-                            <select id="holidayType" class="selectBody"> 
+                            <select id="holidayType" class="selectBody" disabled="disabled"> 
                                     <option value="rh" class="selectItem">RH</option>
                                     <option value="cl" class="selectItem">CL</option>
                                    
@@ -71,9 +68,17 @@
                     </td>
                 </tr>
 
-            </table>
+            <tr>
+            
+            </tr>
 
-            <input type="button" value="Submit" class ="submitForm">
+
+            </table>
+             <input  type="button" value="Edit" class ="submitForm">  
+
+
+        
+
         </form>
 
 
