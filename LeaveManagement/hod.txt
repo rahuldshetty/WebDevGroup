@@ -1,0 +1,7 @@
+login->hod
+
+
+When hod selects on a row for emp go to HodForm.
+
+Use the img buttons to do quick approval.
+

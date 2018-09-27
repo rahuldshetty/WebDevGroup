@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">   
+    <title>HOD Req Status</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/mainform.css" />
+</head>
+<body class="bg">
+
+
+    <ul class="nav">
+       
+        <li class="thisPage" ><div class="navItem" id="navItem1" style="color:black;">Request Leave</div></li>
+
+         <li style="float: right;"><div class="logBtn" id="logoutBtn">Logout</div></li>
+    </ul>
+
+
+
+
+
+
+    <div class="container">
+
+
+
+        <form>
+            <table >
+
+            <tr align="center">          
+                <td class="element">  Name </td>
+                <td><input type="text" class="formElement" disabled="disabled" id="userName" ></td>
+            </tr>
+            
+            <tr  align="center">
+                <td class="element">Department</td>
+                <td><input type="text" class="formElement" disabled="disabled" id="dept" ></td>
+            </tr>
+
+             <tr align="center">          
+                <td class="element">  LeaveReason </td>
+                <td>
+                    <textarea class="formElement" placeholder="Enter Reason." rows="1" cols="50" disabled="disabled"> 
+                        
+                    </textarea>
+                </td>
+            </tr>
+
+            <tr align="center" >
+                <td class="element">Leave Date</td>
+                <td><input type="date" class="formElement" id="leaveDate" disabled="disabled" ></td>
+            </tr>
+
+            <tr align="center" >
+                <td class="element">Number of Days</td>
+                <td><input type="number" class="formElement" disabled="disabled" id="noOfDays" value="1" min="1" ></td>
+            </tr>
+
+            <tr align="center" >
+                    <td class="element">Leave Type</td>
+                    <td>
+                            <select id="holidayType" class="selectBody" disabled="disabled"> 
+                                    <option value="rh" class="selectItem">RH</option>
+                                    <option value="cl" class="selectItem">CL</option>
+                                   
+                            </select> 
+
+                    </td>
+                </tr>
+
+                <tr>
+                <td>          <input type="button" value="Accept" class ="submitForm"></td>
+                <td>          <input type="button" value="Decline" class ="submitForm"></td>
+                
+                </tr>
+
+            </table>
+
+  
+        </form>
+
+
+
+       
+
+    </div>
+    
+</body>
+</html>

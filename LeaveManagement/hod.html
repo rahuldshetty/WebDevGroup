@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">   
+    <title>HOD </title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/hod.css" />
+</head>
+<body class="bg">
+
+
+    <ul class="nav">
+       
+        <li class="thisPage" ><div class="navItem" id="navItem1" style="color:black;">Requests</div></li>
+        
+         <li style="float: right;"><div class="logBtn" id="logoutBtn">Logout</div></li>
+    </ul>
+
+
+
+
+
+
+    <div class="container" align="center">
+
+    	<div class="controlBox">
+    		<form>
+
+    			<div class="cBitem">
+    				Accepted<input type="checkbox" name="checkboxName" id="cbAccept">
+    			</div>
+
+    		
+    			<div class="cBitem">
+    				Declined<input type="checkbox" name="checkboxName" id="cbDecline">
+    			</div>
+
+    			<div class="cBitem">
+    				Yet to Approve<input type="checkbox" name="checkboxName" id="cbYet">
+    			</div>
+
+
+    		</form>
+    	</div>
+
+
+
+
+        <form>
+            <table class="tbl" >
+
+            <tr>
+            	<th class="element">Name</th>
+            	<th class="element">Department</th>
+            	<th class="element">Leave Date</th>
+            	<th class="element">No. Of Days</th>
+				<th class="element">Leave Type</th>
+				<th class="element">Status</th>
+        	</tr>
+
+        	<tr class="tblrow">
+        		<td class="tblelement" id="tblItemName">John Doe</td>
+        		<td class="tblelement" id="tblItemDept">CSE</td>
+        		<td class="tblelement" id="tblItemDate">20/02/2018</td>
+        		<td class="tblelement" id="tblItemDays">3</td>
+        		<td class="tblelement" id="tblItemType">RH</td>
+        		
+        		<td class="tblelement" id="tblItemStat">
+
+        			<div class="tickBtn">
+        			<img  src="images/tick.png" alt="Accept">
+        			</div>
+
+        			<div class="closeBtn">
+        			<img  src="images/cross.png" alt="Decline">
+        			</div>
+
+        				
+        		</td>
+        	</tr>
+
+        	<tr class="tblrow">
+        		<td class="tblelement" id="tblItemName">John Doe</td>
+        		<td class="tblelement" id="tblItemDept">CSE</td>
+        		<td class="tblelement" id="tblItemDate">20/02/2018</td>
+        		<td class="tblelement" id="tblItemDays">3</td>
+        		<td class="tblelement" id="tblItemType">RH</td>
+        		
+        		<td class="tblelement" id="tblItemStat">
+        				
+        		Accepted
+
+        				
+        		</td>
+            </tr>
+
+
+            </table>
+
+           
+        </form>
+
+
+
+       
+
+    </div>
+    
+</body>
+</html>
